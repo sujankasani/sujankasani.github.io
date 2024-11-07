@@ -20,16 +20,51 @@ body {
   @media screen and (max-width: 992px) {
     body {
       font-size: 16px; } }
+      /* Container styling to center the tiles and buttons */
+/* Container styling to center the tiles and buttons */
 
-a {
-  color: #2c98f0;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s; }
-  a:hover, a:active, a:focus {
-    color: #2c98f0;
-    outline: none;
-    text-decoration: none !important; }
+
+
+/* Container styling to center the tiles and buttons */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping if screen size is smaller */
+  gap: 20px; /* Adds space between the buttons */
+  padding: 20px;
+}
+
+/* Individual tile styling */
+.tile {
+  margin: 10px;
+  text-align: center;
+}
+
+/* Button styling */
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #2787e0; /* Button background color */
+  color: white; /* Button text color */
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #5745a0; /* Darker background color on hover */
+  transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+  .tile a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      text-align: center;
+  }
 
 p {
   margin-bottom: 1.5em; }
